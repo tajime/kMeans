@@ -4,7 +4,7 @@ using namespace std;
 
 kMeans::kMeans(string filename, unsigned int k, unsigned int maxLoop)
 {
-    string datafilePath = "data/" + filename;
+    string datafilePath = "../data/" + filename;
     this->k = k;
     this->maxLoop = maxLoop;
     init(datafilePath, k);

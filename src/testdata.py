@@ -11,7 +11,7 @@ points4 = np.random.randn(N, 2)*1.8 + np.array([-5, -4])
 
 points = np.r_[points1, points2, points3, points4]
 np.random.shuffle(points)
-np.savetxt('data/test.txt', points)
+np.savetxt('../data/test.txt', points)
 for p in points:
     plt.scatter(p[0], p[1], color='b')
 plt.show()
