@@ -10,4 +10,7 @@
 "../data/result.csv"を読み取り，クラスを色分けしてプロットする．また，クラスタ重心は□でプロットされる．
 
 ## 実行結果
-![test](img/test.svg) ![test](img/result.svg)
+testdata.pyを実行
+![test](img/test.svg)
+k-meansクラスタリング後，result.pyを実行
+![test](img/result.svg)
