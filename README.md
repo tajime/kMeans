@@ -11,6 +11,9 @@
 
 ## 実行結果
 testdata.pyを実行
+
 ![test](img/test.svg)
+
 k-meansクラスタリング後，result.pyを実行
+
 ![test](img/result.svg)
