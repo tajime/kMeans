@@ -94,11 +94,16 @@ void kMeans::computeCenter()
                 count++;
             }
         }
-        for (int j = 0; j < dim; ++j)
-            sum[j] /= count;
+        if (count != 0)
+        {
+            for (int j = 0; j < dim; ++j)
+                sum[j] /= count;
+        }
+        else
+            sum = points[i].attribute;
         clusterCenters.push_back(sum);
     }
-    for (vector<double> vd : clusterCenters)
+    for (vector<double> &vd : clusterCenters)
     {
         for (double d : vd)
             cout << d << ", ";
